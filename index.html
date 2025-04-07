@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Paradise</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #ffebf3;
+            margin: 0;
+            padding: 0;
+            color: #5a3d7a;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #ff9ec6;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border: 4px dotted #ffffff;
+        }
+        
+        h1 {
+            color: #ffffff;
+            text-shadow: 2px 2px 0 #5a3d7a;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        
+        .game-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border: 3px solid #a6e3ff;
+        }
+        
+        .game-card:hover {
+            transform: scale(1.05);
+            background-color: #fff0f5;
+        }
+        
+        .game-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 10px;
+            background-color: #ffd6e7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            color: #5a3d7a;
+            border: 3px solid #5a3d7a;
+        }
+        
+        .game-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ff6b9e;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #a6e3ff;
+            border-radius: 15px;
+            color: #2d5a7a;
+            font-size: 0.9em;
+        }
+        
+        .character {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 100px;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Pixel Paradise</h1>
+            <p>Your cute gaming adventure starts here!</p>
+        </header>
+        
+        <div class="game-grid">
+            <div class="game-card">
+                <div class="game-icon">🎮</div>
+                <div class="game-title">Bunny Hop</div>
+                <p>Jump through candy clouds!</p>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-icon">🍄</div>
+                <div class="game-title">Mushroom Quest</div>
+                <p>Collect magical shrooms!</p>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-icon">🌟</div>
+                <div class="game-title">Starlight Run</div>
+                <p>Race through the galaxy!</p>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-icon">🍭</div>
+                <div class="game-title">Candy Catch</div>
+                <p>Sweetest game ever!</p>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-icon">🐱</div>
+                <div class="game-title">Kitty Adventure</div>
+                <p>Purr-fect platformer!</p>
+            </div>
+            
+            <div class="game-card">
+                <div class="game-icon">🌈</div>
+                <div class="game-title">Rainbow Slide</div>
+                <p>Colorful fun for everyone!</p>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Made with ♥ for gamers | © 2023 Pixel Paradise</p>
+        </footer>
+    </div>
+    
+    <div class="character">🐰</div>
+</body>
+</html>
